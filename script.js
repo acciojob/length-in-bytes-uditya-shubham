@@ -2,14 +2,9 @@ const byteSize = (str) => {
 // write your code here
 
 
-let x=0;
+let blob = new Blob([str]);
 
-for(let i=0;i<str.length;i++){
-   if(str[i]==" ")
-x++;
-}
-return str.length-x;
-
+return blob.length;
 };
 
 // Do not change the code below
